@@ -9,7 +9,7 @@ class NavComp extends React.Component {
     render () {
         return (    
         <Container>
-            <h1>The search result provided {this.props.library.searchResult.length} results</h1>
+            <h1>The search result provided {this.props.library.searchResult.length} results for {this.props.library.searchQuery}</h1>
             {this.props.utils.isLoading && <Spinner color="primary"></Spinner>}
             {this.props.utils.errorMessage.length > 0 && <Alert color="primary">
                     {this.props.utils.errorMessage}

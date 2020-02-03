@@ -12,12 +12,9 @@ const mapDispatchToProps = dispatch => ({
   loadBooks: searchString => dispatch(loadWithThunk(searchString))
 })
 
-
-
 class App extends React.Component {
   state = {
-    search: "",
-    movies: []
+    search: ""
   }
 
   // startSearch = async () => {

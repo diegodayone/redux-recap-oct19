@@ -8,7 +8,8 @@ const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose
 
 const initialState = {
     library: {
-        searchResult: []
+        searchResult: [],
+        searchQuery: ""
     },
     utils: {
         isLoading: false,

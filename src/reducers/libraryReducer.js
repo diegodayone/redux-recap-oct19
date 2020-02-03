@@ -3,7 +3,8 @@ export default function(state ={}, action) {
         case "LOAD_BOOKS":
             return {
                 ...state,
-                searchResult: action.payload
+                searchResult: action.payload.result,
+                searchQuery: action.payload.search
             }
         default:
             return state;

@@ -10,7 +10,10 @@ export const loadWithThunk = searchString => {
       if (json.Search && response.ok){
         dispatch({
           type: "LOAD_BOOKS",
-          payload: json.Search
+          payload: {
+              result: json.Search,
+              search: searchString
+          }
         });  
         dispatch({
           type: "RESET_LOADING"
